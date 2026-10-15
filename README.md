@@ -1,15 +1,14 @@
-* so I heard about AI being used to reverse engineer and I am like but what if it was made for humans, so I set out to make it easier for humans to use
-
-* Quick editors note here. I am not going to go into detail on how to get this working there are a whole bunch of third party tools involved. Consider this a demonstration of capability as getting this working you will probably already be capable enough to build it yourself or something better. 
-* If you do not use ghidra you are probably on the wrong repository. This is put here for educational use as I am experimenting with seeing what is all possible.
-* I am finding the overreliance and token use on some REA processes to be a waste of tokens and think that with a little know how pepole likely could save a whole
-* bunch of tokens by simply doing some of the legwork themself.
-* As such this is why I started to set out to make an interface to automate some reverse engineering processes and get some recipes made to do it.
-* This is still not developed as much as it could be and frankly, I am sort of curious how much people have done for this REA stuff.
-* As I am guessing decompilation must be fully doable if I am able to get very close to that and I'm not really the cream so to speak.
-* None the less I am expecting only people smarter than me to know what this repository is for, and if they are they probably don't need this repository anyway.
-* I'm not going to heavily document this. I have some things I am looking on adding but it won't be done, I'm guessing the community of REA users all 50,000+ people who forked the project have something better than this.
-* 
+So I heard about AI being used to reverse engineer and I am like but what if it was made for humans, so I set out to make it easier for humans to use.
+-Quick editors note here. I am not going to go into detail on how to get this working there are a whole bunch of third party tools involved. Consider this a demonstration of capability as getting this working you will probably already be capable enough to build it yourself or something better. 
+-If you do not use ghidra you are probably on the wrong repository. This is put here for educational use as I am experimenting with seeing what is all possible.
+-I am finding the overreliance and token use on some REA processes to be a waste of tokens and think that with a little know how pepole likely could save a whole
+bunch of tokens by simply doing some of the legwork themself.
+-As such this is why I started to set out to make an interface to automate some reverse engineering processes and get some recipes made to do it.
+-This is still not developed as much as it could be and frankly, I am sort of curious how much people have done for this REA stuff.
+-As I am guessing decompilation must be fully doable if I am able to get very close to that and I'm not really the cream so to speak.
+-None the less I am expecting only people smarter than me to know what this repository is for, and if they are they probably don't need this repository anyway.
+-I'm not going to heavily document this. I have some things I am looking on adding but it won't be done, I'm guessing the community of REA users all 50,000+ people who forked the project have something better than this.
+ 
 # REA Studio
 
 A Windows desktop app and CLI that lets a **human** drive REA ("Reverse Engineer
