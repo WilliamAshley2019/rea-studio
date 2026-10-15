@@ -1,6 +1,6 @@
 * so I heard about AI being used to reverse engineer and I am like but what if it was made for humans, so I set out to make it easier for humans to use
 
-* Quick editors note here. I am not going to go into detail on how to get this working there are a whole bunch of third party tools involved.
+* Quick editors note here. I am not going to go into detail on how to get this working there are a whole bunch of third party tools involved. Consider this a demonstration of capability as getting this working you will probably already be capable enough to build it yourself or something better. 
 * If you do not use ghidra you are probably on the wrong repository. This is put here for educational use as I am experimenting with seeing what is all possible.
 * I am finding the overreliance and token use on some REA processes to be a waste of tokens and think that with a little know how pepole likely could save a whole
 * bunch of tokens by simply doing some of the legwork themself.
