@@ -1,0 +1,34 @@
+name: Hunt Anti-Debug
+description: |
+  Find every function that references a known anti-debug / anti-analysis
+  import. Searches symbol table for common APIs, xrefs each, resolves the
+  containing function.
+inputs:
+  - {name: binary_path, label: Binary (absolute path), path: true, default: ""}
+steps:
+  - tool: open_binary
+    args: {path: "{input.binary_path}"}
+  - tool: search_symbols
+    args: {pattern: "IsDebuggerPresent", mode: literal}
+    save_as: sym_isdebugger
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "RtlCaptureStackBackTrace", mode: literal}
+    save_as: sym_rtlcapture
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "NtQueryInformationProcess", mode: literal}
+    save_as: sym_ntquery
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "CheckRemoteDebuggerPresent", mode: literal}
+    save_as: sym_checkremote
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "QueryPerformanceCounter", mode: literal}
+    save_as: sym_qpc
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "GetTickCount", mode: literal}
+    save_as: sym_tick
+    on_error: continue

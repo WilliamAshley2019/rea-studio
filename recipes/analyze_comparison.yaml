@@ -1,0 +1,26 @@
+name: Analyze Comparison Function
+description: |
+  Given a function address (found via xrefs in a prior step), extract
+  its full dossier: pseudocode, assembly, callers, callees, and all
+  string and data references. Everything needed to understand the check.
+inputs:
+  - {name: procedure, label: Function (name or address), default: ""}
+steps:
+  - tool: analyze_function
+    args: {procedure: "{input.procedure}"}
+    save_as: dossier
+  - tool: procedure_pseudo_code
+    args: {procedure: "{input.procedure}"}
+    save_as: pseudo
+  - tool: procedure_assembly
+    args: {procedure: "{input.procedure}"}
+    save_as: assembly
+  - tool: procedure_references
+    args: {procedure: "{input.procedure}"}
+    save_as: refs
+  - tool: procedure_callers
+    args: {procedure: "{input.procedure}"}
+    save_as: callers
+  - tool: procedure_callees
+    args: {procedure: "{input.procedure}"}
+    save_as: callees

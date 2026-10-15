@@ -1,0 +1,1799 @@
+{
+  "path": "C:\\Tools\\ghidra-master\\ghidra_12.1.2_PUBLIC_20260605\\ghidra_12.1.2_PUBLIC\\findcrypt_ghidra\\database.d3v",
+  "magic": "0xD3010401",
+  "item_count": 124,
+  "decoded": 124,
+  "entries": [
+    {
+      "index": 0,
+      "name": "SHA_1",
+      "compressed": false,
+      "byte_length": 20,
+      "element_size": 4,
+      "element_count": 5,
+      "sample": [
+        "0x67452301",
+        "0xEFCDAB89",
+        "0x98BADCFE",
+        "0x10325476",
+        "0xC3D2E1F0"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "RC5_RC6",
+      "compressed": false,
+      "byte_length": 8,
+      "element_size": 4,
+      "element_count": 2,
+      "sample": [
+        "0xB7E15163",
+        "0x9E3779B9"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "MD5",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 4,
+      "element_count": 64,
+      "sample": [
+        "0xD76AA478",
+        "0xE8C7B756",
+        "0x242070DB",
+        "0xC1BDCEEE",
+        "0xF57C0FAF",
+        "0x4787C62A"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "MD4",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 4,
+      "element_count": 4,
+      "sample": [
+        "0x67452301",
+        "0xEFCDAB89",
+        "0x98BADCFE",
+        "0x10325476"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "HAVAL",
+      "compressed": false,
+      "byte_length": 32,
+      "element_size": 4,
+      "element_count": 8,
+      "sample": [
+        "0x243F6A88",
+        "0x85A308D3",
+        "0x13198A2E",
+        "0x03707344",
+        "0xA4093822",
+        "0x299F31D0"
+      ]
+    },
+    {
+      "index": 5,
+      "name": "TEA_DELTA",
+      "compressed": false,
+      "byte_length": 4,
+      "element_size": 4,
+      "element_count": 1,
+      "sample": [
+        "0x9E3779B9"
+      ]
+    },
+    {
+      "index": 6,
+      "name": "TEA_ALTERNATIVE_DELTA",
+      "compressed": false,
+      "byte_length": 4,
+      "element_size": 4,
+      "element_count": 1,
+      "sample": [
+        "0x61C88647"
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Sosemanuk_MulTables_B32",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x00000000",
+        "0xE19FCF13",
+        "0x6B973726",
+        "0x8A08F835",
+        "0xD6876E4C",
+        "0x3718A15F"
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Sosemanuk_MulTables_B86",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 4,
+      "element_count": 512,
+      "sample": [
+        "0x00000000",
+        "0xE19FCF12",
+        "0x6B973724",
+        "0x8A08F836",
+        "0xD6876E48",
+        "0x3718A15A"
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Sosemanuk_MulTabl_B64",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x00000000",
+        "0x180F40CD",
+        "0x301E8033",
+        "0x2811C0FE",
+        "0x603CA966",
+        "0x7833E9AB"
+      ]
+    },
+    {
+      "index": 10,
+      "name": "SIMON64_128_3w",
+      "compressed": false,
+      "byte_length": 8,
+      "element_size": 8,
+      "element_count": 1,
+      "sample": [
+        "0x7369F885192C0EF5"
+      ]
+    },
+    {
+      "index": 11,
+      "name": "SIMON64_128_3w",
+      "compressed": false,
+      "byte_length": 8,
+      "element_size": 8,
+      "element_count": 1,
+      "sample": [
+        "0x7369F885192C0EF5"
+      ]
+    },
+    {
+      "index": 12,
+      "name": "SHACAL2_K",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 4,
+      "element_count": 64,
+      "sample": [
+        "0x428A2F98",
+        "0x71374491",
+        "0xB5C0FBCF",
+        "0xE9B5DBA5",
+        "0x3956C25B",
+        "0x59F111F1"
+      ]
+    },
+    {
+      "index": 13,
+      "name": "SEED_kc",
+      "compressed": false,
+      "byte_length": 64,
+      "element_size": 4,
+      "element_count": 16,
+      "sample": [
+        "0x9E3779B9",
+        "0x3C6EF373",
+        "0x78DDE6E6",
+        "0xF1BBCDCC",
+        "0xE3779B99",
+        "0xC6EF3733"
+      ]
+    },
+    {
+      "index": 14,
+      "name": "SEED_s0",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0xA9",
+        "0x85",
+        "0xD6",
+        "0xD3",
+        "0x54",
+        "0x1D",
+        "0xAC",
+        "0x25"
+      ]
+    },
+    {
+      "index": 15,
+      "name": "SEED_s1",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x38",
+        "0xE8",
+        "0x2D",
+        "0xA6",
+        "0xCF",
+        "0xDE",
+        "0xB3",
+        "0xB8"
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Salsa_exp16k",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 4,
+      "element_count": 4,
+      "sample": [
+        "0x61707865",
+        "0x3120646E",
+        "0x79622D36",
+        "0x6B206574"
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Salsa_exp32k",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 4,
+      "element_count": 4,
+      "sample": [
+        "0x61707865",
+        "0x3320646E",
+        "0x79622D32",
+        "0x9E3779B9"
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Lea_delta",
+      "compressed": false,
+      "byte_length": 1152,
+      "element_size": 144,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 19,
+      "name": "Keccak_rho8",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 8,
+      "element_count": 2,
+      "sample": [
+        "0x0605040302010007",
+        "0x0E0D0C0B0A09080F"
+      ]
+    },
+    {
+      "index": 20,
+      "name": "Keccak_rho56",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 8,
+      "element_count": 2,
+      "sample": [
+        "0x0007060504030201",
+        "0x080F0E0D0C0B0A09"
+      ]
+    },
+    {
+      "index": 21,
+      "name": "KeccakF1600Constants",
+      "compressed": false,
+      "byte_length": 192,
+      "element_size": 8,
+      "element_count": 24,
+      "sample": [
+        "0x0000000000000001",
+        "0x0000000000008082",
+        "0x800000000000808A",
+        "0x8000000080008000"
+      ]
+    },
+    {
+      "index": 22,
+      "name": "Kalyna_IS",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 256,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 23,
+      "name": "Kalyna_IT",
+      "compressed": false,
+      "byte_length": 16384,
+      "element_size": 2048,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 24,
+      "name": "Kalyna_S",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 256,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 25,
+      "name": "Kalyna_T",
+      "compressed": false,
+      "byte_length": 16384,
+      "element_size": 2048,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 26,
+      "name": "HIGHT_DELTA",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 1,
+      "element_count": 128,
+      "sample": [
+        "0x5A",
+        "0x6D",
+        "0x36",
+        "0x1B",
+        "0x0D",
+        "0x06",
+        "0x03",
+        "0x41"
+      ]
+    },
+    {
+      "index": 27,
+      "name": "HIGHT_F0",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x00",
+        "0x86",
+        "0x0D",
+        "0x8B",
+        "0x1A",
+        "0x9C",
+        "0x17",
+        "0x91"
+      ]
+    },
+    {
+      "index": 28,
+      "name": "HIGHT_F1",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x00",
+        "0x58",
+        "0xB0",
+        "0xE8",
+        "0x61",
+        "0x39",
+        "0xD1",
+        "0x89"
+      ]
+    },
+    {
+      "index": 29,
+      "name": "ge25519_basepoint_64",
+      "compressed": false,
+      "byte_length": 160,
+      "element_size": 40,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 30,
+      "name": "ge25519_ecd_64",
+      "compressed": false,
+      "byte_length": 40,
+      "element_size": 8,
+      "element_count": 5,
+      "sample": [
+        "0x00034DCA135978A3",
+        "0x0001A8283B156EBD",
+        "0x0005E7A26001C029",
+        "0x000739C663A03CBB"
+      ]
+    },
+    {
+      "index": 31,
+      "name": "ge25519_ec2d_64",
+      "compressed": false,
+      "byte_length": 40,
+      "element_size": 8,
+      "element_count": 5,
+      "sample": [
+        "0x00069B9426B2F159",
+        "0x00035050762ADD7A",
+        "0x0003CF44C0038052",
+        "0x0006738CC7407977"
+      ]
+    },
+    {
+      "index": 32,
+      "name": "ge25519_sqrtneg1_64",
+      "compressed": false,
+      "byte_length": 40,
+      "element_size": 8,
+      "element_count": 5,
+      "sample": [
+        "0x00061B274A0EA0B0",
+        "0x0000D5A5FC8F189D",
+        "0x0007EF5E9CBD0C60",
+        "0x00078595A6804C9E"
+      ]
+    },
+    {
+      "index": 33,
+      "name": "ge25519_niels_sliding_multiples_64",
+      "compressed": false,
+      "byte_length": 3840,
+      "element_size": 40,
+      "element_count": 96,
+      "sample": []
+    },
+    {
+      "index": 34,
+      "name": "modm_m_64",
+      "compressed": false,
+      "byte_length": 40,
+      "element_size": 8,
+      "element_count": 5,
+      "sample": [
+        "0x0012631A5CF5D3ED",
+        "0x00F9DEA2F79CD658",
+        "0x00000000000014DE",
+        "0x0000000000000000"
+      ]
+    },
+    {
+      "index": 35,
+      "name": "modm_mu_64",
+      "compressed": false,
+      "byte_length": 40,
+      "element_size": 8,
+      "element_count": 5,
+      "sample": [
+        "0x009CE5A30A2C131B",
+        "0x00215D086329A7ED",
+        "0x00FFFFFFFFEB2106",
+        "0x00FFFFFFFFFFFFFF"
+      ]
+    },
+    {
+      "index": 36,
+      "name": "ge25519_niels_base_multiples",
+      "compressed": false,
+      "byte_length": 24576,
+      "element_size": 96,
+      "element_count": 256,
+      "sample": []
+    },
+    {
+      "index": 37,
+      "name": "ge25519_basepoint",
+      "compressed": false,
+      "byte_length": 320,
+      "element_size": 80,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 38,
+      "name": "ge25519_ecd",
+      "compressed": false,
+      "byte_length": 80,
+      "element_size": 8,
+      "element_count": 10,
+      "sample": [
+        "0x00000000035978A3",
+        "0x0000000000D37284",
+        "0x0000000003156EBD",
+        "0x00000000006A0A0E"
+      ]
+    },
+    {
+      "index": 39,
+      "name": "ge25519_ec2d",
+      "compressed": false,
+      "byte_length": 80,
+      "element_size": 8,
+      "element_count": 10,
+      "sample": [
+        "0x0000000002B2F159",
+        "0x0000000001A6E509",
+        "0x00000000022ADD7A",
+        "0x0000000000D4141D"
+      ]
+    },
+    {
+      "index": 40,
+      "name": "ge25519_sqrtneg1",
+      "compressed": false,
+      "byte_length": 80,
+      "element_size": 8,
+      "element_count": 10,
+      "sample": [
+        "0x00000000020EA0B0",
+        "0x000000000186C9D2",
+        "0x00000000008F189D",
+        "0x000000000035697F"
+      ]
+    },
+    {
+      "index": 41,
+      "name": "ge25519_niels_sliding_multiples",
+      "compressed": false,
+      "byte_length": 7680,
+      "element_size": 80,
+      "element_count": 96,
+      "sample": []
+    },
+    {
+      "index": 42,
+      "name": "modm_m",
+      "compressed": false,
+      "byte_length": 72,
+      "element_size": 8,
+      "element_count": 9,
+      "sample": [
+        "0x000000001CF5D3ED",
+        "0x0000000020498C69",
+        "0x000000002F79CD65",
+        "0x0000000037BE77A8"
+      ]
+    },
+    {
+      "index": 43,
+      "name": "modm_mu",
+      "compressed": false,
+      "byte_length": 72,
+      "element_size": 8,
+      "element_count": 9,
+      "sample": [
+        "0x000000000A2C131B",
+        "0x000000003673968C",
+        "0x0000000006329A7E",
+        "0x0000000001885742"
+      ]
+    },
+    {
+      "index": 44,
+      "name": "ChaChaInitStates_expanded32k",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 4,
+      "element_count": 4,
+      "sample": [
+        "0x61707865",
+        "0x3320646E",
+        "0x79622D32",
+        "0x6B206574"
+      ]
+    },
+    {
+      "index": 45,
+      "name": "ChaChaInitStates_expanded16k",
+      "compressed": false,
+      "byte_length": 16,
+      "element_size": 4,
+      "element_count": 4,
+      "sample": [
+        "0x61707865",
+        "0x3120646E",
+        "0x79622D36",
+        "0x6B206574"
+      ]
+    },
+    {
+      "index": 46,
+      "name": "BLAKE2_IV",
+      "compressed": false,
+      "byte_length": 32,
+      "element_size": 4,
+      "element_count": 8,
+      "sample": [
+        "0x6A09E667",
+        "0xBB67AE85",
+        "0x3C6EF372",
+        "0xA54FF53A",
+        "0x510E527F",
+        "0x9B05688C"
+      ]
+    },
+    {
+      "index": 47,
+      "name": "BLAKE2_IV_64",
+      "compressed": false,
+      "byte_length": 64,
+      "element_size": 8,
+      "element_count": 8,
+      "sample": [
+        "0x6A09E667F3BCC908",
+        "0xBB67AE8584CAA73B",
+        "0x3C6EF372FE94F82B",
+        "0xA54FF53A5F1D36F1"
+      ]
+    },
+    {
+      "index": 48,
+      "name": "BLAKE2S_SIGMA",
+      "compressed": false,
+      "byte_length": 160,
+      "element_size": 16,
+      "element_count": 10,
+      "sample": []
+    },
+    {
+      "index": 49,
+      "name": "BLAKE2B_SIGMA",
+      "compressed": false,
+      "byte_length": 192,
+      "element_size": 16,
+      "element_count": 12,
+      "sample": []
+    },
+    {
+      "index": 50,
+      "name": "Blowfish_p_init",
+      "compressed": false,
+      "byte_length": 72,
+      "element_size": 4,
+      "element_count": 18,
+      "sample": [
+        "0x243F6A88",
+        "0x85A308D3",
+        "0x13198A2E",
+        "0x03707344",
+        "0xA4093822",
+        "0x299F31D0"
+      ]
+    },
+    {
+      "index": 51,
+      "name": "Blowfish_s_init",
+      "compressed": false,
+      "byte_length": 4096,
+      "element_size": 4,
+      "element_count": 1024,
+      "sample": [
+        "0xD1310BA6",
+        "0x98DFB5AC",
+        "0x2FFD72DB",
+        "0xD01ADFB7",
+        "0xB8E1AFED",
+        "0x6A267E96"
+      ]
+    },
+    {
+      "index": 52,
+      "name": "Camellia_s1",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x70",
+        "0x82",
+        "0x2C",
+        "0xEC",
+        "0xB3",
+        "0x27",
+        "0xC0",
+        "0xE5"
+      ]
+    },
+    {
+      "index": 53,
+      "name": "Camellia_s2",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0xE0",
+        "0x05",
+        "0x58",
+        "0xD9",
+        "0x67",
+        "0x4E",
+        "0x81",
+        "0xCB"
+      ]
+    },
+    {
+      "index": 54,
+      "name": "Camellia_s3",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x38",
+        "0x41",
+        "0x16",
+        "0x76",
+        "0xD9",
+        "0x93",
+        "0x60",
+        "0xF2"
+      ]
+    },
+    {
+      "index": 55,
+      "name": "Camellia_s4",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x70",
+        "0x2C",
+        "0xB3",
+        "0xC0",
+        "0xE4",
+        "0x57",
+        "0xEA",
+        "0xAE"
+      ]
+    },
+    {
+      "index": 56,
+      "name": "CAST_S",
+      "compressed": false,
+      "byte_length": 8192,
+      "element_size": 1024,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 57,
+      "name": "CAST256_t_m",
+      "compressed": false,
+      "byte_length": 768,
+      "element_size": 96,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 58,
+      "name": "CAST256_t_r",
+      "compressed": false,
+      "byte_length": 768,
+      "element_size": 96,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 59,
+      "name": "CRC32_m_tab",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x00000000",
+        "0x77073096",
+        "0xEE0E612C",
+        "0x990951BA",
+        "0x076DC419",
+        "0x706AF48F"
+      ]
+    },
+    {
+      "index": 60,
+      "name": "DES_ei",
+      "compressed": false,
+      "byte_length": 48,
+      "element_size": 1,
+      "element_count": 48,
+      "sample": [
+        "0x20",
+        "0x01",
+        "0x02",
+        "0x03",
+        "0x04",
+        "0x05",
+        "0x04",
+        "0x05"
+      ]
+    },
+    {
+      "index": 61,
+      "name": "DES_fp",
+      "compressed": false,
+      "byte_length": 64,
+      "element_size": 1,
+      "element_count": 64,
+      "sample": [
+        "0x28",
+        "0x08",
+        "0x30",
+        "0x10",
+        "0x38",
+        "0x18",
+        "0x40",
+        "0x20"
+      ]
+    },
+    {
+      "index": 62,
+      "name": "DES_ip",
+      "compressed": false,
+      "byte_length": 64,
+      "element_size": 1,
+      "element_count": 64,
+      "sample": [
+        "0x3A",
+        "0x32",
+        "0x2A",
+        "0x22",
+        "0x1A",
+        "0x12",
+        "0x0A",
+        "0x02"
+      ]
+    },
+    {
+      "index": 63,
+      "name": "DES_p32i",
+      "compressed": false,
+      "byte_length": 32,
+      "element_size": 1,
+      "element_count": 32,
+      "sample": [
+        "0x10",
+        "0x07",
+        "0x14",
+        "0x15",
+        "0x1D",
+        "0x0C",
+        "0x1C",
+        "0x11"
+      ]
+    },
+    {
+      "index": 64,
+      "name": "DES_pc1",
+      "compressed": false,
+      "byte_length": 56,
+      "element_size": 1,
+      "element_count": 56,
+      "sample": [
+        "0x39",
+        "0x31",
+        "0x29",
+        "0x21",
+        "0x19",
+        "0x11",
+        "0x09",
+        "0x01"
+      ]
+    },
+    {
+      "index": 65,
+      "name": "DES_pc2",
+      "compressed": false,
+      "byte_length": 48,
+      "element_size": 1,
+      "element_count": 48,
+      "sample": [
+        "0x0E",
+        "0x11",
+        "0x0B",
+        "0x18",
+        "0x01",
+        "0x05",
+        "0x03",
+        "0x1C"
+      ]
+    },
+    {
+      "index": 66,
+      "name": "DES_sbox",
+      "compressed": false,
+      "byte_length": 512,
+      "element_size": 64,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 67,
+      "name": "GOST_sBox",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 16,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 68,
+      "name": "HAVAL_mc2",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x452821E6",
+        "0x38D01377",
+        "0xBE5466CF",
+        "0x34E90C6C",
+        "0xC0AC29B7",
+        "0xC97C50DD"
+      ]
+    },
+    {
+      "index": 69,
+      "name": "HAVAL_mc3",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x9C30D539",
+        "0x2AF26013",
+        "0xC5D1B023",
+        "0x286085F0",
+        "0xCA417918",
+        "0xB8DB38EF"
+      ]
+    },
+    {
+      "index": 70,
+      "name": "HAVAL_mc4",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x7A325381",
+        "0x28958677",
+        "0x3B8F4898",
+        "0x6B4BB9AF",
+        "0xC4BFE81B",
+        "0x66282193"
+      ]
+    },
+    {
+      "index": 71,
+      "name": "HAVAL_mc5",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0xBA3BF050",
+        "0x7EFB2A98",
+        "0xA1F1651D",
+        "0x39AF0176",
+        "0x66CA593E",
+        "0x82430E88"
+      ]
+    },
+    {
+      "index": 72,
+      "name": "HAVAL_wi2",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x00000005",
+        "0x0000000E",
+        "0x0000001A",
+        "0x00000012",
+        "0x0000000B",
+        "0x0000001C"
+      ]
+    },
+    {
+      "index": 73,
+      "name": "HAVAL_wi3",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x00000013",
+        "0x00000009",
+        "0x00000004",
+        "0x00000014",
+        "0x0000001C",
+        "0x00000011"
+      ]
+    },
+    {
+      "index": 74,
+      "name": "HAVAL_wi4",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x00000018",
+        "0x00000004",
+        "0x00000000",
+        "0x0000000E",
+        "0x00000002",
+        "0x00000007"
+      ]
+    },
+    {
+      "index": 75,
+      "name": "HAVAL_wi5",
+      "compressed": false,
+      "byte_length": 128,
+      "element_size": 4,
+      "element_count": 32,
+      "sample": [
+        "0x0000001B",
+        "0x00000003",
+        "0x00000015",
+        "0x0000001A",
+        "0x00000011",
+        "0x0000000B"
+      ]
+    },
+    {
+      "index": 76,
+      "name": "MARS_Sbox",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 4,
+      "element_count": 512,
+      "sample": [
+        "0x09D0C479",
+        "0x28C8FFE0",
+        "0x84AA6C39",
+        "0x9DAD7287",
+        "0x7DFF9BE3",
+        "0xD4268361"
+      ]
+    },
+    {
+      "index": 77,
+      "name": "MD2_S",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x29",
+        "0x2E",
+        "0x43",
+        "0xC9",
+        "0xA2",
+        "0xD8",
+        "0x7C",
+        "0x01"
+      ]
+    },
+    {
+      "index": 78,
+      "name": "MD5MAC_T",
+      "compressed": false,
+      "byte_length": 48,
+      "element_size": 4,
+      "element_count": 12,
+      "sample": [
+        "0xAC45EF97",
+        "0xCD430F29",
+        "0x551B7E45",
+        "0x3411801C",
+        "0x96CE77B1",
+        "0x7C8E722E"
+      ]
+    },
+    {
+      "index": 79,
+      "name": "PKCS_DigestDecoration_MD2",
+      "compressed": false,
+      "byte_length": 18,
+      "element_size": 1,
+      "element_count": 18,
+      "sample": [
+        "0x30",
+        "0x20",
+        "0x30",
+        "0x0C",
+        "0x06",
+        "0x08",
+        "0x2A",
+        "0x86"
+      ]
+    },
+    {
+      "index": 80,
+      "name": "PKCS_DigestDecoration_MD5",
+      "compressed": false,
+      "byte_length": 18,
+      "element_size": 1,
+      "element_count": 18,
+      "sample": [
+        "0x30",
+        "0x20",
+        "0x30",
+        "0x0C",
+        "0x06",
+        "0x08",
+        "0x2A",
+        "0x86"
+      ]
+    },
+    {
+      "index": 81,
+      "name": "PKCS_DigestDecoration_RIPEMD160",
+      "compressed": false,
+      "byte_length": 15,
+      "element_size": 1,
+      "element_count": 15,
+      "sample": [
+        "0x30",
+        "0x21",
+        "0x30",
+        "0x09",
+        "0x06",
+        "0x05",
+        "0x2B",
+        "0x24"
+      ]
+    },
+    {
+      "index": 82,
+      "name": "PKCS_DigestDecoration_SHA256",
+      "compressed": false,
+      "byte_length": 19,
+      "element_size": 1,
+      "element_count": 19,
+      "sample": [
+        "0x30",
+        "0x31",
+        "0x30",
+        "0x0D",
+        "0x06",
+        "0x09",
+        "0x60",
+        "0x86"
+      ]
+    },
+    {
+      "index": 83,
+      "name": "PKCS_DigestDecoration_SHA384",
+      "compressed": false,
+      "byte_length": 19,
+      "element_size": 1,
+      "element_count": 19,
+      "sample": [
+        "0x30",
+        "0x41",
+        "0x30",
+        "0x0D",
+        "0x06",
+        "0x09",
+        "0x60",
+        "0x86"
+      ]
+    },
+    {
+      "index": 84,
+      "name": "PKCS_DigestDecoration_SHA512",
+      "compressed": false,
+      "byte_length": 19,
+      "element_size": 1,
+      "element_count": 19,
+      "sample": [
+        "0x30",
+        "0x51",
+        "0x30",
+        "0x0D",
+        "0x06",
+        "0x09",
+        "0x60",
+        "0x86"
+      ]
+    },
+    {
+      "index": 85,
+      "name": "PKCS_DigestDecoration_Tiger",
+      "compressed": false,
+      "byte_length": 19,
+      "element_size": 1,
+      "element_count": 19,
+      "sample": [
+        "0x30",
+        "0x29",
+        "0x30",
+        "0x0D",
+        "0x06",
+        "0x09",
+        "0x2B",
+        "0x06"
+      ]
+    },
+    {
+      "index": 86,
+      "name": "RawDES_Spbox",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 256,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 87,
+      "name": "rc2_PITABLE",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0xD9",
+        "0x78",
+        "0xF9",
+        "0xC4",
+        "0x19",
+        "0xDD",
+        "0xB5",
+        "0xED"
+      ]
+    },
+    {
+      "index": 88,
+      "name": "Rijndael_Td0",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x51F4A750",
+        "0x7E416553",
+        "0x1A17A4C3",
+        "0x3A275E96",
+        "0x3BAB6BCB",
+        "0x1F9D45F1"
+      ]
+    },
+    {
+      "index": 89,
+      "name": "Rijndael_Td1",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x5051F4A7",
+        "0x537E4165",
+        "0xC31A17A4",
+        "0x963A275E",
+        "0xCB3BAB6B",
+        "0xF11F9D45"
+      ]
+    },
+    {
+      "index": 90,
+      "name": "Rijndael_Td2",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0xA75051F4",
+        "0x65537E41",
+        "0xA4C31A17",
+        "0x5E963A27",
+        "0x6BCB3BAB",
+        "0x45F11F9D"
+      ]
+    },
+    {
+      "index": 91,
+      "name": "Rijndael_Td3",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0xF4A75051",
+        "0x4165537E",
+        "0x17A4C31A",
+        "0x275E963A",
+        "0xAB6BCB3B",
+        "0x9D45F11F"
+      ]
+    },
+    {
+      "index": 92,
+      "name": "Rijndael_Td4",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x52525252",
+        "0x09090909",
+        "0x6A6A6A6A",
+        "0xD5D5D5D5",
+        "0x30303030",
+        "0x36363636"
+      ]
+    },
+    {
+      "index": 93,
+      "name": "Rijndael_Te0",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0xC66363A5",
+        "0xF87C7C84",
+        "0xEE777799",
+        "0xF67B7B8D",
+        "0xFFF2F20D",
+        "0xD66B6BBD"
+      ]
+    },
+    {
+      "index": 94,
+      "name": "Rijndael_Te1",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0xA5C66363",
+        "0x84F87C7C",
+        "0x99EE7777",
+        "0x8DF67B7B",
+        "0x0DFFF2F2",
+        "0xBDD66B6B"
+      ]
+    },
+    {
+      "index": 95,
+      "name": "Rijndael_Te2",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x63A5C663",
+        "0x7C84F87C",
+        "0x7799EE77",
+        "0x7B8DF67B",
+        "0xF20DFFF2",
+        "0x6BBDD66B"
+      ]
+    },
+    {
+      "index": 96,
+      "name": "Rijndael_Te3",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x6363A5C6",
+        "0x7C7C84F8",
+        "0x777799EE",
+        "0x7B7B8DF6",
+        "0xF2F20DFF",
+        "0x6B6BBDD6"
+      ]
+    },
+    {
+      "index": 97,
+      "name": "Rijndael_Te4",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x63636363",
+        "0x7C7C7C7C",
+        "0x77777777",
+        "0x7B7B7B7B",
+        "0xF2F2F2F2",
+        "0x6B6B6B6B"
+      ]
+    },
+    {
+      "index": 98,
+      "name": "SAFER_exp_tab",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x01",
+        "0x2D",
+        "0xE2",
+        "0x93",
+        "0xBE",
+        "0x45",
+        "0x15",
+        "0xAE"
+      ]
+    },
+    {
+      "index": 99,
+      "name": "SAFER_log_tab",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x80",
+        "0x00",
+        "0xB0",
+        "0x09",
+        "0x60",
+        "0xEF",
+        "0xB9",
+        "0xFD"
+      ]
+    },
+    {
+      "index": 100,
+      "name": "SHA256_K",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 4,
+      "element_count": 64,
+      "sample": [
+        "0x428A2F98",
+        "0x71374491",
+        "0xB5C0FBCF",
+        "0xE9B5DBA5",
+        "0x3956C25B",
+        "0x59F111F1"
+      ]
+    },
+    {
+      "index": 101,
+      "name": "SHA512_K",
+      "compressed": false,
+      "byte_length": 640,
+      "element_size": 8,
+      "element_count": 80,
+      "sample": [
+        "0x428A2F98D728AE22",
+        "0x7137449123EF65CD",
+        "0xB5C0FBCFEC4D3B2F",
+        "0xE9B5DBA58189DBBC"
+      ]
+    },
+    {
+      "index": 102,
+      "name": "SHARK_dec_cbox",
+      "compressed": false,
+      "byte_length": 16384,
+      "element_size": 2048,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 103,
+      "name": "SHARK_enc_cbox",
+      "compressed": false,
+      "byte_length": 16384,
+      "element_size": 2048,
+      "element_count": 8,
+      "sample": []
+    },
+    {
+      "index": 104,
+      "name": "SHARK_iG",
+      "compressed": false,
+      "byte_length": 64,
+      "element_size": 8,
+      "element_count": 8,
+      "sample": [
+        "0x41914BD0859030E7",
+        "0x68A1BC96A59B9553",
+        "0x52B61F5C65F74502",
+        "0xA22A63449422CAA2"
+      ]
+    },
+    {
+      "index": 105,
+      "name": "SKIPJACK_fTable",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0xA3",
+        "0xD7",
+        "0x09",
+        "0x83",
+        "0xF8",
+        "0x48",
+        "0xF6",
+        "0xF4"
+      ]
+    },
+    {
+      "index": 106,
+      "name": "Square_Sd_or_SHARK_dec_sbox",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0x35",
+        "0xBE",
+        "0x07",
+        "0x2E",
+        "0x53",
+        "0x69",
+        "0xDB",
+        "0x28"
+      ]
+    },
+    {
+      "index": 107,
+      "name": "Square_Se_or_SHARK_enc_sbox",
+      "compressed": false,
+      "byte_length": 256,
+      "element_size": 1,
+      "element_count": 256,
+      "sample": [
+        "0xB1",
+        "0xCE",
+        "0xC3",
+        "0x95",
+        "0x5A",
+        "0xAD",
+        "0xE7",
+        "0x02"
+      ]
+    },
+    {
+      "index": 108,
+      "name": "Square_Td",
+      "compressed": false,
+      "byte_length": 4096,
+      "element_size": 1024,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 109,
+      "name": "Square_Te",
+      "compressed": false,
+      "byte_length": 4096,
+      "element_size": 1024,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 110,
+      "name": "Tiger_table",
+      "compressed": false,
+      "byte_length": 8192,
+      "element_size": 8,
+      "element_count": 1024,
+      "sample": [
+        "0x02AAB17CF7E90C5E",
+        "0xAC424B03E243A8EC",
+        "0x72CD5BE30DD5FCD3",
+        "0x6D019B93F6F97F3A"
+      ]
+    },
+    {
+      "index": 111,
+      "name": "Twofish_mds",
+      "compressed": false,
+      "byte_length": 4096,
+      "element_size": 1024,
+      "element_count": 4,
+      "sample": []
+    },
+    {
+      "index": 112,
+      "name": "Twofish_q",
+      "compressed": false,
+      "byte_length": 512,
+      "element_size": 256,
+      "element_count": 2,
+      "sample": []
+    },
+    {
+      "index": 113,
+      "name": "WAKE_tt",
+      "compressed": false,
+      "byte_length": 40,
+      "element_size": 4,
+      "element_count": 10,
+      "sample": [
+        "0x726A8F3B",
+        "0xE69A3B5C",
+        "0xD3C71FE5",
+        "0xAB3C73D2",
+        "0x4D3A8EB3",
+        "0x0396D6E8"
+      ]
+    },
+    {
+      "index": 114,
+      "name": "Whirlpool_C0",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 8,
+      "element_count": 256,
+      "sample": [
+        "0x1818281878C0D878",
+        "0x23236523AF0526AF",
+        "0xC6C657C6F97EB8F9",
+        "0xE8E825E86F13FB6F"
+      ]
+    },
+    {
+      "index": 115,
+      "name": "Whirlpool_C1",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 8,
+      "element_count": 256,
+      "sample": [
+        "0x781818281878C0D8",
+        "0xAF23236523AF0526",
+        "0xF9C6C657C6F97EB8",
+        "0x6FE8E825E86F13FB"
+      ]
+    },
+    {
+      "index": 116,
+      "name": "Whirlpool_C2",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 8,
+      "element_count": 256,
+      "sample": [
+        "0xD8781818281878C0",
+        "0x26AF23236523AF05",
+        "0xB8F9C6C657C6F97E",
+        "0xFB6FE8E825E86F13"
+      ]
+    },
+    {
+      "index": 117,
+      "name": "Whirlpool_C3",
+      "compressed": false,
+      "byte_length": 2048,
+      "element_size": 8,
+      "element_count": 256,
+      "sample": [
+        "0xC0D8781818281878",
+        "0x0526AF23236523AF",
+        "0x7EB8F9C6C657C6F9",
+        "0x13FB6FE8E825E86F"
+      ]
+    },
+    {
+      "index": 118,
+      "name": "Whirlpool_rc",
+      "compressed": false,
+      "byte_length": 80,
+      "element_size": 8,
+      "element_count": 10,
+      "sample": [
+        "0x1823C6E887B8014F",
+        "0x36A6D2F5796F9152",
+        "0x60BC9B8EA30C7B35",
+        "0x1DE0D7C22E4BFE57"
+      ]
+    },
+    {
+      "index": 119,
+      "name": "zdeflate_lengthCodes",
+      "compressed": false,
+      "byte_length": 1024,
+      "element_size": 4,
+      "element_count": 256,
+      "sample": [
+        "0x00000101",
+        "0x00000102",
+        "0x00000103",
+        "0x00000104",
+        "0x00000105",
+        "0x00000106"
+      ]
+    },
+    {
+      "index": 120,
+      "name": "zinflate_distanceExtraBits",
+      "compressed": false,
+      "byte_length": 120,
+      "element_size": 4,
+      "element_count": 30,
+      "sample": [
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000001",
+        "0x00000001"
+      ]
+    },
+    {
+      "index": 121,
+      "name": "zinflate_distanceStarts",
+      "compressed": false,
+      "byte_length": 120,
+      "element_size": 4,
+      "element_count": 30,
+      "sample": [
+        "0x00000001",
+        "0x00000002",
+        "0x00000003",
+        "0x00000004",
+        "0x00000005",
+        "0x00000007"
+      ]
+    },
+    {
+      "index": 122,
+      "name": "zinflate_lengthExtraBits",
+      "compressed": false,
+      "byte_length": 116,
+      "element_size": 4,
+      "element_count": 29,
+      "sample": [
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000",
+        "0x00000000"
+      ]
+    },
+    {
+      "index": 123,
+      "name": "zinflate_lengthStarts",
+      "compressed": false,
+      "byte_length": 116,
+      "element_size": 4,
+      "element_count": 29,
+      "sample": [
+        "0x00000003",
+        "0x00000004",
+        "0x00000005",
+        "0x00000006",
+        "0x00000007",
+        "0x00000008"
+      ]
+    }
+  ]
+}

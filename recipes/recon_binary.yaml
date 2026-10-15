@@ -1,0 +1,25 @@
+# Verified against REA 6.4.0's real tool schemas (open_binary needs `path`;
+# search_strings needs `pattern`; export_evidence_bundle needs `path`).
+# export_evidence_bundle is marked destructive by REA because it can overwrite;
+# overwrite: true lets you re-run this recipe on the same binary.
+name: Recon Binary
+description: |
+  Open a binary (Ghidra analysis takes 30-90 s the first time), overview it,
+  list its procedures, search for a string, then export an evidence bundle
+  next to the binary as <binary>.evidence.json.
+inputs:
+  - {name: binary_path, label: Binary (absolute path), path: true, default: ""}
+  - {name: search_pattern, label: String to search, default: "flag"}
+steps:
+  - tool: open_binary
+    args: {path: "{input.binary_path}"}
+  - tool: binary_overview
+    args: {}
+  - tool: list_procedures
+    args: {}
+    save_as: procedures
+  - tool: search_strings
+    args: {pattern: "{input.search_pattern}", mode: literal, case_sensitive: false}
+    save_as: strings
+  - tool: export_evidence_bundle
+    args: {path: "{input.binary_path}.evidence.json", overwrite: true}

@@ -1,0 +1,7 @@
+{
+  "rea_root": "C:\\Users\\%USERNAME%\\rea-main",
+  "ghidra_install_dir": "C:\\Tools\\ghidra-master\\ghidra_12.1.2_PUBLIC_20260605\\ghidra_12.1.2_PUBLIC",
+  "java_home": "C:\\Program Files\\Java\\jdk-25.0.4",
+  "provider": "ghidra",
+  "node": "node"
+}

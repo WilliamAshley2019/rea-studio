@@ -1,0 +1,15 @@
+# Verified argument names: search_strings(pattern), xrefs(address).
+name: Find String References
+description: |
+  Search for a string, then show cross-references to an address you choose
+  from the search results (run the search once in the Tools tab to find the
+  address, or put the string address in the second input). Needs a binary
+  already opened (run Recon Binary first, or open_binary in the Tools tab).
+inputs:
+  - {name: pattern, label: String pattern, default: ""}
+  - {name: address, label: Address for xrefs (e.g. 0x102004), default: ""}
+steps:
+  - tool: search_strings
+    args: {pattern: "{input.pattern}", mode: literal, case_sensitive: false}
+  - tool: xrefs
+    args: {address: "{input.address}"}

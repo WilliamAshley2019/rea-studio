@@ -1,0 +1,94 @@
+# Audition plugin reconnaissance.
+# Mirrors the Ghidra headless script ExtractAuditionData.py, expressed as
+# REA calls. Runs against an already-opened binary; each step is optional
+# so a missing string or symbol doesn't stop the run.
+
+name: Audition Recon
+description: |
+  Locate the AudioEngine, PresetDragButton, and plugin-scanning code in an
+  Audition VST/AU plugin. Searches for JUCE / Audition-specific strings and
+  mangled names, resolves each hit to a function, and (in the Python driver)
+  decompiles the functions behind them.
+inputs:
+  - {name: binary_path, label: Binary (absolute path), path: true, default: "C:\\samples\\Plugin Audition.exe"}
+
+steps:
+  # ---- open once; subsequent runs are cheap (REA caches by hash) ----
+  - tool: open_binary
+    args: {path: "{input.binary_path}"}
+    save_as: opened
+
+  # ---- Engine class ----
+  - tool: search_strings
+    args: {pattern: "gainDb", mode: literal, case_sensitive: false}
+    save_as: s_gainDb
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "audioFile", mode: literal, case_sensitive: false}
+    save_as: s_audioFile
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "Engine@audition", mode: regex}
+    save_as: p_engine
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "AudioTransportSource@juce", mode: regex}
+    save_as: p_transport
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "AudioBufferSource@juce", mode: regex}
+    save_as: p_bufsrc
+    on_error: continue
+
+  # ---- PresetDragButton ----
+  - tool: search_strings
+    args: {pattern: "Click and drag this button into FL Studio", mode: literal, case_sensitive: false}
+    save_as: s_dragButton
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "PresetDragButton@audition", mode: regex}
+    save_as: p_dragButton
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "DragAndDropContainer@juce", mode: regex}
+    save_as: p_dnd
+    on_error: continue
+
+  # ---- Plugin scanning ----
+  - tool: search_strings
+    args: {pattern: "scan.xml", mode: literal, case_sensitive: false}
+    save_as: s_scanxml
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "audition worker", mode: literal, case_sensitive: false}
+    save_as: s_worker
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "Scanner@PluginListComponent@juce", mode: regex}
+    save_as: p_scanner
+    on_error: continue
+  - tool: search_procedures
+    args: {pattern: "ThreadPool@juce", mode: regex}
+    save_as: p_tp
+    on_error: continue
+
+  # ---- Anti-debug / anti-tamper imports ----
+  - tool: search_symbols
+    args: {pattern: "IsDebuggerPresent", mode: literal}
+    save_as: sym_debug
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "RtlCaptureStackBackTrace", mode: literal}
+    save_as: sym_rtl
+    on_error: continue
+
+  # ---- The suspicious tdb segment at 0xff00000000 ----
+  - tool: xrefs
+    args: {address: "0xff00000000"}
+    save_as: tdb_xrefs
+    on_error: continue
+
+  # ---- Evidence bundle next to the binary ----
+  - tool: export_evidence_bundle
+    args: {path: "{input.binary_path}.audition.evidence.json", overwrite: true}
+    on_error: continue

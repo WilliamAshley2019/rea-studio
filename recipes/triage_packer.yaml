@@ -1,0 +1,36 @@
+name: Triage Packer
+description: |
+  First pass on any unknown binary. Looks for packer signatures, checks
+  section layout, identifies the entry point, and reports whether the
+  binary appears to be packed.
+inputs:
+  - {name: binary_path, label: Binary (absolute path), path: true, default: ""}
+steps:
+  - tool: open_binary
+    args: {path: "{input.binary_path}"}
+    save_as: opened
+  - tool: binary_overview
+    args: {}
+    save_as: overview
+  - tool: list_segments
+    args: {}
+    save_as: segments
+  - tool: search_strings
+    args: {pattern: "UPX|ASPack|MPRESS|Themida|VMProtect|PECompact|Enigma|Petite|FSG|MEW", mode: regex, case_sensitive: false}
+    save_as: packer_strings
+    on_error: continue
+  - tool: search_bytes
+    args: {pattern: "UPX0", mode: literal}
+    save_as: upx_section
+    on_error: continue
+  - tool: search_bytes
+    args: {pattern: ".aspack", mode: literal}
+    save_as: aspack_section
+    on_error: continue
+  - tool: search_bytes
+    args: {pattern: ".themida", mode: literal}
+    save_as: themida_section
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "This program cannot be run in DOS mode", mode: literal}
+    save_as: dos_stub

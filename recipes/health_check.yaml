@@ -1,0 +1,11 @@
+# Safe, read-only. binary_session takes no required arguments.
+name: Health Check
+description: |
+  Confirms REA answers and shows the current session, provider and open documents.
+inputs: []
+steps:
+  - tool: binary_session
+    args: {}
+  - tool: list_documents
+    args: {}
+    on_error: continue

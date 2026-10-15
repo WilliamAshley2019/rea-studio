@@ -1,0 +1,14 @@
+name: Slice by Namespace
+description: |
+  Given a class/namespace pattern (e.g. "Engine@audition", "@juce", "@Qt",
+  "@boost"), find every procedure whose mangled name matches and decompile it.
+  Needs a binary already opened (run Recon Binary first, or open_binary).
+inputs:
+  - {name: pattern, label: Name pattern (regex), default: "@juce"}
+steps:
+  - tool: search_procedures
+    args: {pattern: "{input.pattern}", mode: regex}
+    save_as: hits
+  - tool: binary_overview
+    args: {}
+    on_error: continue

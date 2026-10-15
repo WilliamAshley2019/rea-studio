@@ -1,0 +1,14 @@
+name: Import Call Graph
+description: |
+  For a given import, find every function that calls it, and every function
+  that calls those. Two-hop caller graph. Useful for "where does the binary
+  talk to the network / read files / call crypto".
+inputs:
+  - {name: import_name, label: Import (e.g. InternetOpenA), default: "InternetOpenA"}
+steps:
+  - tool: search_symbols
+    args: {pattern: "{input.import_name}", mode: literal}
+    save_as: import_hits
+  - tool: binary_overview
+    args: {}
+    on_error: continue

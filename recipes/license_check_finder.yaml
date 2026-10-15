@@ -1,0 +1,37 @@
+name: License Check Finder
+description: |
+  Search for licensing-related strings and identify the functions behind
+  them. Combine with import_callgraph to rank candidates.
+inputs:
+  - {name: binary_path, label: Binary (absolute path), path: true, default: ""}
+steps:
+  - tool: open_binary
+    args: {path: "{input.binary_path}"}
+  - tool: search_strings
+    args: {pattern: "licen", mode: literal, case_sensitive: false}
+    save_as: hits_licen
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "trial", mode: literal, case_sensitive: false}
+    save_as: hits_trial
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "expired", mode: literal, case_sensitive: false}
+    save_as: hits_expired
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "serial", mode: literal, case_sensitive: false}
+    save_as: hits_serial
+    on_error: continue
+  - tool: search_strings
+    args: {pattern: "activate", mode: literal, case_sensitive: false}
+    save_as: hits_activate
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "CryptVerifySignature", mode: literal}
+    save_as: sym_cryptverify
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "RegQueryValue", mode: literal}
+    save_as: sym_regquery
+    on_error: continue

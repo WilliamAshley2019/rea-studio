@@ -1,0 +1,14 @@
+name: Crypto Usage by Table
+description: |
+  Given an address where a crypto table was detected (e.g. the AES S-box
+  found by findcrypt), find the function that references it. Turns
+  "there's a table at 0x14002c400" into "FUN_14001a780 uses it".
+inputs:
+  - {name: table_address, label: Table address (hex), default: ""}
+steps:
+  - tool: xrefs
+    args: {address: "{input.table_address}"}
+    save_as: refs
+  - tool: resolve_containing_procedure    args: {address: "{input.table_address}"}
+    save_as: containing
+    on_error: continue

@@ -1,0 +1,28 @@
+name: Plugin Entry Points
+description: |
+  Locate the public entry-point exports of a plugin binary (VST3, AU, AAX,
+  or JUCE-based). Gives the plugin's API surface in one pass.
+inputs:
+  - {name: binary_path, label: Binary (absolute path), path: true, default: ""}
+steps:
+  - tool: open_binary
+    args: {path: "{input.binary_path}"}
+  - tool: search_procedures
+    args: {pattern: "GetPluginFactory|bundleEntry|mainEntry|auEntry|"
+                     "GetComponent|ModuleEntry|ModuleExit|"
+                     "DllGetClassObject|DllRegisterServer|DllUnregisterServer",
+           mode: regex}
+    save_as: entry_candidates
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "GetPluginFactory", mode: literal}
+    save_as: sym_getfactory
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "bundleEntry", mode: literal}
+    save_as: sym_bundleentry
+    on_error: continue
+  - tool: search_symbols
+    args: {pattern: "mainEntry", mode: literal}
+    save_as: sym_mainentry
+    on_error: continue

@@ -1,0 +1,15 @@
+# Verified argument names: analyze_function(procedure), procedure_callers(procedure),
+# procedure_callees(procedure).
+name: Trace Calls
+description: |
+  Analyze one function, then list who calls it and what it calls.
+  Needs a binary already opened (run Recon Binary first).
+inputs:
+  - {name: procedure, label: Procedure (name or address), default: ""}
+steps:
+  - tool: analyze_function
+    args: {procedure: "{input.procedure}"}
+  - tool: procedure_callers
+    args: {procedure: "{input.procedure}"}
+  - tool: procedure_callees
+    args: {procedure: "{input.procedure}"}

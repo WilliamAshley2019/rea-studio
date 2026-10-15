@@ -1,0 +1,15 @@
+name: Runtime Mapped Segments
+description: |
+  Report any segment whose address is far above the image base. On a normal
+  PE that is a red flag: it means the program maps memory at a fixed address
+  outside the loaded image, which is where custom allocators, JITs, and DRM
+  blobs usually live. Needs a binary already opened.
+inputs: []
+steps:
+  - tool: list_segments
+    args: {}
+    save_as: segments
+  - tool: binary_overview
+    args: {}
+    save_as: overview
+    on_error: continue
