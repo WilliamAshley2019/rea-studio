@@ -39,10 +39,10 @@ workflows as recipes.
 
 On first start it writes `rea-studio.config.json` next to `main.py`. Edit it if
 your paths differ:
-
+YEAH OBVIOUSLY these are just example paths not real ones.. phef.
 ```json
 {
-  "rea_root": "C:\\Users\\Administrator\\Downloads\\rea-main",
+  "rea_root": "C:\\Users\\%Username%\rea-main",
   "ghidra_install_dir": "C:\\Tools\\ghidra-master\\ghidra_12.1.2_PUBLIC_20260605\\ghidra_12.1.2_PUBLIC",
   "java_home": "C:\\Program Files\\Java\\jdk-25.0.4",
   "provider": "ghidra",
