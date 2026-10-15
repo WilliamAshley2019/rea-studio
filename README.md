@@ -89,7 +89,7 @@ are analyzed too. Each report folder contains:
 A step that fails or is unavailable is recorded in the report and the run
 continues. **Stop after current step** ends cleanly and still writes a partial
 report. With several files, a `reports\index-*.md` table summarizes the batch.
-
+CASTLE IS ONLY USED AS AN EXAMPLE HERE CASTLE.EXE could be substituted for any REAL file you are analyzing.
 Command line equivalents:
 
 ```
