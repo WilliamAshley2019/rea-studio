@@ -183,50 +183,6 @@ Typical native-binary chain (once the addon is built):
 `procedure_pseudo_code` or `read_function_instructions` → `procedure_callers` /
 `xrefs` → `read_bytes` → `export_evidence_bundle`.
 
-## What has and has not been verified
+**** THIS IS DATED *** may not update readme anytime soon - I might continue to add recipes.
+Again there are dependencies they are whatever you try to use with it.
 
-Verified (with REA 6.4.0's real tool catalog, 193 tools, from your machine):
-- Every tool's schema builds a working form, and all 203 shipped examples
-  round-trip exactly (`tests\forms_real.py`).
-- The app connects, lists, calls, gates destructive tools and runs recipes
-  against a stand-in MCP server, on both `mcp` 1.26.0 (your version) and 2.3.0.
-- The recipes use argument names confirmed in the real schemas.
-
-Auto Analyze was additionally tested end to end: every call it makes is checked
-against REA's real input schemas, and the stand-in server's replies are checked
-against REA's real output schemas (`tests\auto_test.py`, `tests\gui_auto.py`).
-
-**Not yet verified:** a real call into REA/Ghidra from this app on your
-machine, and how real results look (no custom result views yet — results are
-pretty-printed JSON). Open a small `.exe` with `open_binary`, run
-`list_procedures`/`search_strings`, and send me the JSON to get proper views.
-
-Auto Analyze reads results by the documented field names (`normalized_result`,
-`address`, `value`, …). If real output differs somewhere, that part of the
-report is thinner but nothing crashes, and `raw\` always has the full reply.
-Large programs may produce very large string lists and slow steps; use
-**Quick** first.
-
-Other limits: calls are sequential and block the Call button until they return
-(no cancel yet); `open_binary` on first analysis takes 30-90 s.
-
-## Self-tests (optional, no REA needed)
-
-```
-python tests/auto_test.py                # Auto Analyze end to end against a stand-in REA
-QT_QPA_PLATFORM=offscreen python tests/forms_real.py
-```
-
-## Self-test of the GUI (optional)
-
-```
-QT_QPA_PLATFORM=offscreen python tests/gui_smoke.py
-```
-needs `server_command`/`server_args` in the config pointing at
-`tests\fake_rea_server.py`. `python tests/forms_real.py` needs no server.
-
-## Next passes
-
-Result views for function lists/strings/xrefs (needs real sample output),
-project/investigation tab, recipe editor, tool favorites, cancel button,
-PyInstaller `.exe`, in-app tutorial mode that highlights the next tool to call.
